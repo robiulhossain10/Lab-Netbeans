@@ -13,10 +13,17 @@ import java.util.Collection;
  * @author A-3
  */
 public class MinMaxArray {
+    
+    // Main Method
+    
     public static void main(String[] args) {
         MinMax();
         SumAVG();
         SortArray();
+        
+        
+        RemoveDuplicates(new int [] {5,5,8,6,4,8});
+        ReverseArray(new int [] {5,4,3,2,1});
     }
     
     
@@ -67,5 +74,26 @@ public class MinMaxArray {
            
         }
         System.out.println(Arrays.toString(sorting));
+    }
+    
+    // Remove Duplicates From Arrays
+    
+    static int [] RemoveDuplicates(int[] arr ){
+        
+       int [] unique = Arrays.stream(arr) .distinct() .toArray();
+        System.out.println("RemoveDuplicate Array: " + Arrays.toString(unique));
+        return unique;
+    }
+    
+    static int [] ReverseArray(int[] arr ){
+        
+       int [] reversed = new int [arr.length];
+       int j = 0;
+       for(int i = arr.length -1; i >= 0; i--){
+           reversed [j] = arr[i];
+           j++;
+       }
+        System.out.println("Reversed Array: " + Arrays.toString(reversed));
+        return reversed;
     }
 }
