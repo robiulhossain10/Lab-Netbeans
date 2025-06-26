@@ -4,6 +4,8 @@
  */
 package com.methods.methodexample.ObjectMethods;
 
+import java.util.Date;
+
 /**
  *
  * @author A-3
@@ -22,6 +24,8 @@ public class BankAccount {
     public void Deposit(double ammount){
         this.balance += ammount;
         System.out.println("Ammount $" + ammount + " Diposited ");
+        Date date = new Date();
+        System.out.println("Date: " + date.getTime());
     }
     
     public void withdraw(double ammount){
