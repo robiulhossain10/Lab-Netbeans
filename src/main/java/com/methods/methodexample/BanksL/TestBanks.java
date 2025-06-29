@@ -10,6 +10,7 @@ package com.methods.methodexample.BanksL;
  */
 public class TestBanks {
     public static void main(String[] args) {
+        
         BankAccounts bnk1 = new BankAccounts(1252956555L, "Robiul Hossain", 70000);
         BankAccounts bnk2 = new BankAccounts(1252956445L, "Rakib Mridha", 90000);
         BankAccounts bnk3 = new BankAccounts(1252956225L, "Fahim Hossain", 60000);
@@ -18,13 +19,14 @@ public class TestBanks {
         BankAccounts bnk6 = new BankAccounts(1252956005L, "Tamima Mostafa Monisha", 100);
         
         
-        bnk1.withdraw(69900);
-        bnk1.recharge(60);
+      
+        bnk1.bankLoan(6000);
         bnk1.accountAccess();
-        System.out.println("");
-        bnk2.accountAccess();
-         System.out.println("");
-         bnk6.recharge(9);
-         bnk6.accountAccess();
+//        System.out.println("");
+//        bnk2.accountAccess();
+//         System.out.println("");
+//         bnk6.recharge(9);
+//         bnk6.accountAccess();
+         
     }
 }
