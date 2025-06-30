@@ -22,7 +22,9 @@ public class NumberFormat {
             System.out.println("You are Typing: " + number);
         } catch (NumberFormatException e) {
             System.out.println("Wrong input");
-        }
+        } finally{
+             System.out.println("Finaaaaaallyyyyyyyyyyy");
+         }
     }
     
   
