@@ -19,6 +19,8 @@ public class TryCatchs {
             System.out.println("Results: " + results);
         } catch(ArithmeticException e){
             System.out.println("ArithmeticException" + e.getMessage());
+        } finally{
+            System.out.println("Finallllllllllllllllllllllly");
         }
     }
 }
