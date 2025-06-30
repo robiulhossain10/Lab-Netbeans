@@ -10,23 +10,19 @@ package com.methods.methodexample.BanksL;
  */
 public class TestBanks {
     public static void main(String[] args) {
+         BankAccounts bank1 = new BankAccounts(1232555455l, "Robiul Hossain", 70000);
+        BankAccounts bank2 = new BankAccounts(1232555455l, "Kazi Joynal", 50000);
+        BankAccounts bank3 = new BankAccounts(1232555455l, "Habib Khan", 500);
+        BankAccounts bank4 = new BankAccounts(1232555455l, "Sabrina Aurpa", 100000);
+
         
-        BankAccounts bnk1 = new BankAccounts(1252956555L, "Robiul Hossain", 70000);
-        BankAccounts bnk2 = new BankAccounts(1252956445L, "Rakib Mridha", 90000);
-        BankAccounts bnk3 = new BankAccounts(1252956225L, "Fahim Hossain", 60000);
-        BankAccounts bnk4 = new BankAccounts(1252956775L, "Mahim Hossain", 100000);
-        BankAccounts bnk5 = new BankAccounts(1252956005L, "Karim Hossain", 150000);
-        BankAccounts bnk6 = new BankAccounts(1252956005L, "Tamima Mostafa Monisha", 100);
+
+       
         
-        
-      
-        bnk1.bankLoan(6000);
-        bnk1.accountAccess();
-//        System.out.println("");
-//        bnk2.accountAccess();
-//         System.out.println("");
-//         bnk6.recharge(9);
-//         bnk6.accountAccess();
+        bank4.accountAccess();
+        System.out.println("");
+         bank4.bankLoan(10000,1);
+
          
     }
 }
