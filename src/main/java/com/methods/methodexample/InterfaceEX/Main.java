@@ -10,12 +10,20 @@ package com.methods.methodexample.InterfaceEX;
  */
 public class Main {
     public static void main(String[] args) {
-        SmartStudent s = new SmartStudent();
+        Human s = new SmartStudent();
 
-        s.eat();         // Human থেকে
-        s.sleep();       // Human থেকে
-        s.study();       // Student থেকে
-        s.attendClass(); // Student এর concrete method
+//        s.eat();         // From Human 
+//        s.sleep();       // From Human 
+//        s.study();       // From Student 
+//        s.attendClass(); // From Student concrete method
+
+//            s.fly();
+
+    s.fly();
+    s.eat();
+    s.sleep();
+    s.study();
+        
     }
 }
 
