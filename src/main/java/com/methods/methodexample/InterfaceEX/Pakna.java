@@ -8,11 +8,8 @@ package com.methods.methodexample.InterfaceEX;
  *
  * @author A-3
  */
-abstract class Pakna {
-    abstract void fly();
-
-    void wings() {
-        System.out.println("Amar Dana Ace");
-    }
+abstract class Pakna implements Human{
+  
+    
 }
 
