@@ -10,5 +10,8 @@ package com.methods.methodexample.InterfaceEX;
  */
 public interface Human {
      void eat();
-    void sleep();
+     void sleep();
+     void fly();
+     void wings();
+     void study();
 }
