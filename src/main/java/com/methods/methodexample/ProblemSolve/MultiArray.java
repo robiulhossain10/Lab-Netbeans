@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author A-3
  */
 public class MultiArray {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         int [] [] arr = {
             {9,2,8,4},
             {6,7,9,5,1},
@@ -37,7 +37,8 @@ public class MultiArray {
     
     
     
-    static void mDABubble(int [][] arrays2){
+    static void mDABubble(int [][] arrays2) throws Exception{
+        
         for (int[] arys : arrays2) {
             for (int i = 0; i < arys.length; i++) {
                 for (int j = i+1; j < arys.length; j++) {
@@ -50,6 +51,8 @@ public class MultiArray {
             }
            
         }
+        
          System.out.println("Arrays Bubble Sort: " + Arrays.deepToString(arrays2));
+         
     }
 }
