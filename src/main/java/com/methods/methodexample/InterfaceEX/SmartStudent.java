@@ -8,7 +8,7 @@ package com.methods.methodexample.InterfaceEX;
  *
  * @author A-3
  */
-class SmartStudent extends Student implements Human {
+public class SmartStudent extends Pakna{
     // Human interface এর method গুলো
     public void eat() {
         System.out.println("I Eat");
@@ -21,6 +21,16 @@ class SmartStudent extends Student implements Human {
     // Student abstract class এর method
     public void study() {
         System.out.println("I Read in Book");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Ami Fly Korchi");
+    }
+
+    @Override
+    public void wings() {
+        System.out.println("Wings");
     }
 }
 
