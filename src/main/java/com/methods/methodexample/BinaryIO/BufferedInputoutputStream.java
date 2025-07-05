@@ -25,8 +25,8 @@ public class BufferedInputoutputStream {
             while ((bytesReads = fis.read(buffer)) != -1) {
                 fid.write(buffer, 0 , bytesReads);
                
-                
-            }
+                  
+            }   
              fid.close();
              fis.close();
                System.out.println("Image Copied Your Folder");
