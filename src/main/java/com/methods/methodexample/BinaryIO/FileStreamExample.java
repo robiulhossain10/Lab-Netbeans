@@ -4,6 +4,8 @@
  */
 package com.methods.methodexample.BinaryIO;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -45,7 +47,7 @@ public class FileStreamExample {
         }
         
         
-        //Buffer Read Write
+        //File Stream Output Buffer Read Write
         
            try {
             FileInputStream fis = new FileInputStream("F:\\JAVA\\FileStreamOutput\\ph.jpg");
@@ -63,5 +65,7 @@ public class FileStreamExample {
         } catch (Exception e) {
                System.out.println("Exceptions"+ e.getMessage());
         }
+           
+
     }
 }
