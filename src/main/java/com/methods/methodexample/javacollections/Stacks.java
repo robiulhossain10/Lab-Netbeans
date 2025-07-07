@@ -10,6 +10,8 @@ import java.util.Stack;
  *
  * @author A-3
  */
+
+//Lifo Method
 public class Stacks {
     public static void main(String[] args) {
         Stack<String> stack = new Stack<>();
