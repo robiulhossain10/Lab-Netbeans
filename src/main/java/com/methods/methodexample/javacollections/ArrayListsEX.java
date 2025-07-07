@@ -42,28 +42,53 @@ public class ArrayListsEX {
             System.out.println("Flower: " + is + " ");
         }
         
-        // Iterate - ForEach with Lamda
+        System.out.println("");
         
-        flower.forEach( item ->
-                
-            { 
-                System.out.println("Flower-lamda: " + item);
+        // Iterate - ForEach with Lamda
+        flower.forEach(item
+                -> {
+            System.out.println("Flower-lamda: " + item);
         }
         );
-        
+
+        System.out.println("");
+
+        //Clone ArrayList
+        ArrayList<String> clone = (ArrayList<String>) flower.clone();
+        System.out.println("Clone List: " + clone);
+
+        System.out.println("");
+
         arrayTOarraylist();
-    }
-    
-    static void arrayTOarraylist(){
-       Integer [] arr = {4,5,8,9,7,5,6,3,2};
-       ArrayList <Integer> nums = new ArrayList<>(Arrays.asList(arr));
         
+        //arrayListToArray
+        
+        String[] flowarr = flower.toArray(new String[0]);
+        System.out.println("Converted Array: " + Arrays.toString(flowarr));
+    }
+
+    static void arrayTOarraylist() {
+        Integer[] arr = {4, 5, 8, 9, 7, 5, 6, 3, 2};
+        ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(arr));
+
         nums.add(50);
         Collections.sort(nums);
         System.out.println("Sorted Nums: " + nums);
-        
+
+        System.out.println();
+
         Collections.sort(nums, Collections.reverseOrder());
-         System.out.println("Sorted Nums Reverse: " + nums);
+        System.out.println("Sorted Nums Decending: " + nums);
+
+        System.out.println();
+
+        Collections.reverse(nums);
+        System.out.println("Reverse Order: " + nums);
+
+        //Search(Contains)
+        System.out.println("Contains 3? : " + nums.contains(3));
+
     }
+
 
 }
