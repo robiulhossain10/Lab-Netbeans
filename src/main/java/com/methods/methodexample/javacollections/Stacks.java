@@ -11,7 +11,7 @@ import java.util.Stack;
  * @author A-3
  */
 
-//Lifo Method
+                    //Lifo Method
 public class Stacks {
     public static void main(String[] args) {
         Stack<String> stack = new Stack<>();
@@ -23,6 +23,6 @@ public class Stacks {
         System.out.println("Stack: " + stack);
         System.out.println("Stack Peek: " + stack.peek()); //C
         System.out.println("stack pop: " + stack.pop()); // C remove
-        System.out.println("Stack Peek: " + stack.peek()); // B
+        System.out.println("Stack Peek: " + stack); // B
     }
 }
