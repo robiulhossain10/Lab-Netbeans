@@ -9,19 +9,9 @@ package com.methods.methodexample.GenericS;
  * @author A-3
  */
 
-//---------------- Generics Class ---------------------
-
-public class Box<T> {
-    private T value;
-
-
-
-    public T getValue() {
-        return value;
+    //Bounded Generics 
+ class Calculator<T extends Number> {
+    public double square (T number){
+        return number.doubleValue() * number.doubleValue();
     }
-
-    public void setValue(T value) {
-        this.value = value;
-    }
-    
 }
