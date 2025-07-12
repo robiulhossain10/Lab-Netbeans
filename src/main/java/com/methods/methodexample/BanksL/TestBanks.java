@@ -19,9 +19,10 @@ public class TestBanks {
 
        
         
-        bank4.accountAccess();
-        System.out.println("");
-         bank4.bankLoan(10000,1);
+//        bank4.accountAccess();
+//        System.out.println("");
+         bank4.bankLoan(10000,2);
+//         bank4.recharge(100);
 
          
     }

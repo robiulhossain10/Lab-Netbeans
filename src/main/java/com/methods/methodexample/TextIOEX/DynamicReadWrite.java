@@ -7,6 +7,7 @@ package com.methods.methodexample.TextIOEX;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.ResultSet;
 
 /**
  *
@@ -22,13 +23,9 @@ public class DynamicReadWrite {
             FileWriter write = new FileWriter("C:\\Users\\A-3\\Desktop\\reads2.txt");
             
             int Character ;
-            
-            
             while((Character = reading.read()) != -1){
             
                 write.write((char)Character);
-            
-            
             
             }
             write.close();

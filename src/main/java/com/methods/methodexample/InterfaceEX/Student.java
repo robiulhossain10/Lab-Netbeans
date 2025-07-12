@@ -10,6 +10,7 @@ package com.methods.methodexample.InterfaceEX;
  */
 abstract class Student {
     abstract void study();
+    
 
     void attendClass() {
         System.out.println("I am go to school");

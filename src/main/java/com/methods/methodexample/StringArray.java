@@ -40,7 +40,7 @@ public class StringArray {
     }
     
         System.out.println("");
-    Integer [] abc = {1,2,3,4,5,6,7,8,9,10}; // Descending Order Only Non Primitive Support;
+    Integer [] abc = {1,2,3,4,5,6,7,8,9,10}; // Descending Order Only Support Support Non Primitive;
     
         Arrays.sort(abc, Collections.reverseOrder());
         

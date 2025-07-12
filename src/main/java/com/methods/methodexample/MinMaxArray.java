@@ -80,7 +80,7 @@ public class MinMaxArray {
     
     static int [] RemoveDuplicates(int[] arr ){
         
-       int [] unique = Arrays.stream(arr) .distinct() .toArray();
+       int [] unique = Arrays.stream(arr) .distinct().toArray();
         System.out.println("RemoveDuplicate Array: " + Arrays.toString(unique));
         return unique;
     }

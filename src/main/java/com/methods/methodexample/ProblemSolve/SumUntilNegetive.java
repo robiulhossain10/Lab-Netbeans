@@ -33,25 +33,25 @@ public class SumUntilNegetive {
         
     }
     
-//    static void SumNegetive(){
-//        Scanner sc = new Scanner(System.in);
-//        
-//        
-//        int input = 0;
-//        int sum = 0;
-//        
-//        while (input >= 0) {
-//            System.out.println("Enter a Value");
-//            input = sc.nextInt();
-//            
-//            if(input >= 0){
-//                sum += input;
-//            }
-//            
-//        }
-//        
-//        System.out.println("Sum: " + sum);
-//    }
+    static void SumNegetive(){
+        Scanner sc = new Scanner(System.in);
+        
+        
+        int input = 0;
+        int sum = 0;
+        
+        while (input >= 0) {
+            System.out.println("Enter a Value");
+            input = sc.nextInt();
+            
+            if(input >= 0){
+                sum += input;
+            }
+            
+        }
+        
+        System.out.println("Sum: " + sum);
+    }
     
     
     static void bubbleSort(int [] [] array3){

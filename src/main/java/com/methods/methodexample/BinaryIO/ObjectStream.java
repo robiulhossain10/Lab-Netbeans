@@ -4,8 +4,9 @@
  */
 package com.methods.methodexample.BinaryIO;
 
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
+
+import java.io.*;
+import  java.util.*;
 
 /**
  *
@@ -15,6 +16,7 @@ public class ObjectStream {
     public static void main(String[] args) {
         try {
             ObjectInputStream oos = new ObjectInputStream(new FileInputStream("employee.txt"));
+            
             
         } catch (Exception e) {
             

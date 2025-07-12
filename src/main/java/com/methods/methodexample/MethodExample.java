@@ -10,7 +10,7 @@ package com.methods.methodexample;
 public class MethodExample {
     
     
-      String name;
+    String name;
     int age;
     static String address = "Khulna";
 
@@ -34,6 +34,14 @@ public class MethodExample {
         obj3.printName();
         obj3.printName("Jahid");
         obj3.printName();
+        
+        
+        
+        int i = 0;
+for (; i < 4; i += 2) {
+System.out.print(i + "");
+}
+System.out.print(i);
     }
 
   
@@ -61,4 +69,8 @@ public class MethodExample {
         age = ageParam;
         System.out.println("Your Age " + age + "!!");
     }
+    
+
+
+
 }
