@@ -46,16 +46,16 @@ public class Accounts implements Serializable{
         this.balance = balance;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Account{");
-        sb.append("id=").append(id);
-        sb.append(", name=").append(name);
-        sb.append(", balance=").append(balance);
-        sb.append('}');
-        return sb.toString();
-    }
+//    @Override
+//    public String toString() {
+//        StringBuilder sb = new StringBuilder();
+//        sb.append("Account{");
+//        sb.append("id=").append(id);
+//        sb.append(", name=").append(name);
+//        sb.append(", balance=").append(balance);
+//        sb.append('}');
+//        return sb.toString();
+//    }
 
     
      public boolean deposit(double amount) {
