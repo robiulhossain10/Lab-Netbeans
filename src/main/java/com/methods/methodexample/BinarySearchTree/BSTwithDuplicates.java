@@ -1,19 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.methods.methodexample.BinarySearchTree;
-
-/**
- *
- * @author A-3
- */
-
-    
-
-
     // Node class for the tree
-    class Node {
+
+
+    public class BSTwithDuplicates {
+            class Node {
 
         int key;
         int count; // to handles duplicates
@@ -27,9 +18,17 @@ package com.methods.methodexample.BinarySearchTree;
 
     }
 
-    public class BSTwithDuplicates {
+    public BSTwithDuplicates() {
+        root = null;
+    }
+    
+    void insert(int key){
+        root = insert(root, key);
+    }
+            
+            
 
-        Node root;  //5
+        Node root;  //5,2,8
 
         Node insert(Node node, int key) {
             if (node == null) {
@@ -69,10 +68,13 @@ package com.methods.methodexample.BinarySearchTree;
         public static void main(String[] args) {
         BSTwithDuplicates bst = new BSTwithDuplicates();
         
-        bst.root = bst.insert(bst.root, 5);
-        bst.root = bst.insert(bst.root, 3);
-        bst.root = bst.insert(bst.root, 4);
+        bst.insert(5);
+        bst.insert(9);
+        bst.insert(3);
+        bst.insert(1);
+        
         bst.inOrder(bst.root);
+
                 
     }
 
