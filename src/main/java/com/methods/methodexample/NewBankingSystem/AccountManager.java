@@ -1,4 +1,4 @@
-package com.methods.methodexample.advancedbank;
+package com.methods.methodexample.NewBankingSystem;
 import java.math.BigDecimal;
 import java.sql.*;
 import java.util.Scanner;

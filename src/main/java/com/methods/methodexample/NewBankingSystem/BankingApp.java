@@ -1,4 +1,4 @@
-package com.methods.methodexample.advancedbank;
+package com.methods.methodexample.NewBankingSystem;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package com.methods.methodexample.advancedbank;
+package com.methods.methodexample.NewBankingSystem;
 
 import javax.xml.transform.Result;
 import java.sql.Connection;
