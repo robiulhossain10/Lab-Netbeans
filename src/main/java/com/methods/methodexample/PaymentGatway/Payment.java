@@ -3,22 +3,23 @@ package com.methods.methodexample.PaymentGatway;
 
 import java.util.UUID;
 
+/**
+ *
+ * @author ROBIUL
+ */
 public abstract class Payment {
-    protected String transactionid;
-    protected double amount;
+    String transactionId;
+    double amount;
 
-        public Payment(double amount) {
-        this.transactionid = generateTransactionid();
+    public Payment(double amount) {
+        this.transactionId = generateTransactionId();
         this.amount = amount;
     }
-
     
-     public String generateTransactionid(){
-        return "TXN" + UUID.randomUUID().toString().substring(0,8).toUpperCase();
+    public String generateTransactionId(){
+        return "TRX" + UUID.randomUUID().toString().substring(0,8).toUpperCase();
     }
-
     
-    abstract void processPayment();
-        
+    public abstract void processingPayment();
     
 }

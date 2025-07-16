@@ -1,34 +1,48 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.methods.methodexample.PaymentGatway;
 
-/**
- *
- * @author A-3
- */
-public class CreditCardPayment extends Payment implements PaymentMethod{
+import java.util.Scanner;
 
-    public CreditCardPayment(double amount){
+public class CreditCardPayment extends Payment implements PaymentMethod {
+
+    private final String storedHashedPin;
+
+    public CreditCardPayment(double amount, String userId) {
         super(amount);
+        this.storedHashedPin = PinDB.getHashedPin(userId);
+
+        if (this.storedHashedPin == null) {
+            throw new RuntimeException("User not found or PIN not set.");
+        }
     }
 
     @Override
-    void processPayment() {
-       authenticateUser();
+    public void processingPayment() {
+        authenticateUser();
         completeTransaction(amount);
-        System.out.println("Transaction Completed with ID: " + transactionid);
+        System.out.println("Transaction completed with ID: " + transactionId);
     }
 
     @Override
     public void authenticateUser() {
-        System.out.println("Authenticating Credit Card");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your PIN: ");
+        String inputPin = sc.nextLine();
+
+        if (!verifyPin(inputPin)) {
+            System.out.println("Authentication Failed");
+            throw new RuntimeException("Auth failed");
+        }
+
+        System.out.println("Authentication Successful");
     }
 
     @Override
     public void completeTransaction(double amount) {
-        System.out.println("Charging Credit Card " + amount);
+        System.out.println("Charged Credit Card with amount: " + amount);
     }
-    
+
+    @Override
+    public boolean verifyPin(String inputPin) {
+        return storedHashedPin.equals(HashUtil.sha256(inputPin));
+    }
 }
