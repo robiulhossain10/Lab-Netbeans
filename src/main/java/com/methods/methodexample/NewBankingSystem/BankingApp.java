@@ -17,7 +17,7 @@ public class BankingApp {
             AccountManager accountManager = new AccountManager(connection, scanner);
 
             String email;
-            long account_number;
+            long account_number;    
 
             while (true) {
                 System.out.println("\n*** WELCOME TO BANKING SYSTEM ***");
