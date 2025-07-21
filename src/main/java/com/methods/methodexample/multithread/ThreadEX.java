@@ -11,6 +11,8 @@ package com.methods.methodexample.multithread;
 public class ThreadEX extends Thread{
     @Override
     public void run() {
-        System.out.println("Thread Running: " + ThreadEX.currentThread());
+        for (int i = 0; i < 100; i++) {
+            System.out.println("Hello threads " + i);
+        }
     }
 }

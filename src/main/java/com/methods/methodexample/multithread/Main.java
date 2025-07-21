@@ -10,8 +10,9 @@ package com.methods.methodexample.multithread;
  */
 public class Main {
     public static void main(String[] args) {
+         System.out.println("Lamda Main Threads: " + Thread.currentThread().getName());
         Thread t1 = new Thread(() -> {
-            System.out.println("Lamda Main Threads: " + Thread.currentThread().getName());
+           
         });
         t1.start(); 
         
