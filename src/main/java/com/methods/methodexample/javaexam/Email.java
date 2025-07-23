@@ -1,3 +1,5 @@
+package com.methods.methodexample.javaexam;
+
 import java.util.Scanner;
 
 public class Email {

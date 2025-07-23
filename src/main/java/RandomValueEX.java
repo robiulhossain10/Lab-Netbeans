@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-public class RandomValue {
+public class RandomValueEX {
   public static HashSet<Integer> randoms() {
     HashSet<Integer> set = new HashSet<>();
 

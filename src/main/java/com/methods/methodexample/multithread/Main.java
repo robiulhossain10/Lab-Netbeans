@@ -10,13 +10,23 @@ package com.methods.methodexample.multithread;
  */
 public class Main {
     public static void main(String[] args) {
-         System.out.println("Lamda Main Threads: " + Thread.currentThread().getName());
-        Thread t1 = new Thread(() -> {
-           
-        });
-        t1.start(); 
+//        RunnableEX ts = new RunnableEX("Download Task");
+//        
+//        Thread t1 = new Thread(ts);
+//        Thread t2 = new Thread(new RunnableEX("Upload Task"));
+//        
+//        t1.start();
+//        t2.start();
+//        
+//        System.out.println("Main Thread Done");
         
-        ThreadEX t2 = new ThreadEX();
-        t2.start();
+        //with Lamda Expression
+        
+        Thread t = new Thread(() ->{
+            System.out.println("Running in " + Thread.currentThread().getName()); 
+        });
+        
+        
+        t.start();
     }
 }

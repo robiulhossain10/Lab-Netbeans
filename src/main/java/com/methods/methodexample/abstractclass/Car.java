@@ -14,6 +14,5 @@ public abstract class Car {
     
     void stop(){
         System.out.println("Car is Stopping");
-    
     };
 }
