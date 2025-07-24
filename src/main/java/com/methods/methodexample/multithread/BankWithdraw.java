@@ -7,29 +7,30 @@ public class BankWithdraw {
     public BankWithdraw(double balance) {
         this.balance = balance;
     }
-    
-    public synchronized void bankWithdraw(double amount,String threadName){
+
+    public synchronized void bankWithdraw(double amount, String threadName) {
         System.out.println(threadName + " Withdraw Start " + amount);
         if (balance >= amount) {
             try {
                 Thread.sleep(1000);
                 balance -= amount;
-                System.out.println(threadName+ " Balance Withdraw Successful " + balance);
+                System.out.println(threadName + " Balance Withdraw Successful " + balance);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }else{
+        } else {
             System.out.println("Insufficient Balance");
         }
-        
+
     }
 
-     public double getBalance() {
+    public double getBalance() {
         return balance;
     }
 }
 
-class WithdrawTask implements Runnable{
+class WithdrawTask implements Runnable {
+
     private BankWithdraw account;
     private int amount;
     private String threadName;
@@ -44,8 +45,5 @@ class WithdrawTask implements Runnable{
     public void run() {
         account.bankWithdraw(amount, threadName);
     }
-    
 
 }
-
-
