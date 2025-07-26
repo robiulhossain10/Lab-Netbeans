@@ -14,15 +14,13 @@ import java.io.IOException;
  */
 public class BuffeReader {
 
-
     public static void main(String[] args) {
-            try{
-    BufferedReader reader = new BufferedReader(new FileReader("noneexists.txt"));
-    
-}catch(IOException e){
-                System.out.println("IO Exceptions: " + e.getMessage());
-}
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("noneexists.txt"));
+
+        } catch (IOException e) {
+            System.out.println("IO Exceptions: " + e.getMessage());
+        }
     }
-    
 
 }

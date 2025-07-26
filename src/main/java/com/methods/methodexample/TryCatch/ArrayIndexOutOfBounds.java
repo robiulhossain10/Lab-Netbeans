@@ -9,21 +9,22 @@ package com.methods.methodexample.TryCatch;
  * @author A-3
  */
 public class ArrayIndexOutOfBounds {
+
     public static void main(String[] args) {
         defination("Robiul");
     }
-    
-    static void Exceptions(){
-    try{
-    int [] arr = new int[3];
+
+    static void Exceptions() {
+        try {
+            int[] arr = new int[3];
             System.out.println(arr[5]);
-}catch(ArrayIndexOutOfBoundsException e){
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBoundsException" + e.getMessage());
-            
-}
+
+        }
     }
-    
-    static void defination(String name){
+
+    static void defination(String name) {
         Exceptions();
         System.out.println("My name is " + name);
     }
